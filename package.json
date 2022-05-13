@@ -3,7 +3,10 @@
   "description": "Partial typing for the @scatterjs/core library",
   "version": "0.0.1",
   "devDependencies": {
-    "eosjs": "*",
+    "eosjs": "*"
+  },
+  "optionalDependencies": {
+    "@scatterjs/lynx": "*",
     "@scatterjs/eosjs2": "*"
   },
   "license": "MIT",
