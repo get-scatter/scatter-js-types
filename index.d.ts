@@ -1,7 +1,9 @@
+
 /** @see https://get-scatter.github.io/docs/api-reference */
 declare module '@scatterjs/core' {
     import type { Api, JsonRpc } from "eosjs";
     import type ScatterEOS from "@scatterjs/eosjs2";
+    import type ScatterLynx from '@scatterjs/lynx';
 
     /** @see https://get-scatter.github.io/docs/networks */
     interface Network {
@@ -69,6 +71,6 @@ declare module '@scatterjs/core' {
         identity: Identity | null;
     }
 
-    export const plugins: (scatterEos: ScatterEOS) => void;
+    export const plugins: (...plugins: (ScatterEOS | ScatterLynx)[]) => void;
     export const scatter: Scatter;
 }
