@@ -1,2 +1,2 @@
 # scatter-js-types
-Typescript type definitions I gathered based on the API documentation. It's not complete, focused primarily on EOS
+Typescript type definitions for `@scatterjs/core` that I composed based on the API documentation. It's not complete, focused primarily on EOS
